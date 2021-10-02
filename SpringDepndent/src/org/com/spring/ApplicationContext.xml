@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	
+    <!-- Define your beans here -->
+    
+    <!-- define the dependency -->
+
+    <bean id="ans1"
+        class="org.com.spring.Answer">  
+        <constructor-arg value="1"></constructor-arg>
+        <constructor-arg value="Java is programming "> </constructor-arg>
+        <constructor-arg value="sunil"></constructor-arg>
+       </bean>
+       
+        <bean id="ans2"
+        class="org.com.spring.Answer">  
+        <constructor-arg value="2"></constructor-arg>
+        <constructor-arg value="Java is platform "> </constructor-arg>
+        <constructor-arg value="anil"></constructor-arg>
+       </bean>
+       
+        <bean id="q"
+        class="org.com.spring.Question">  
+        <constructor-arg value="111"></constructor-arg>
+        <constructor-arg value="what is java? "> </constructor-arg>
+        
+        <constructor-arg>
+        <list>
+        <ref bean="ans1"/>
+        <ref bean="ans2"/>
+        </list>
+        
+        </constructor-arg>
+       </bean>
+   
+       
+       
+       
+       
+       
+   
+    
+</beans>
+
+

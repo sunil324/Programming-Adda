@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+
+h1{
+	padding: 10px 12px;
+	margin: 10px 12px;
+	font-style: italic;
+	width: 10px 12px;
+	color: red;
+	flood-color: blue;
+
+}
+
+h1.img{
+	border: 12px;
+	margin: 12px 21px;
+	width: 23px 21px;
+}
+
+p{
+
+padding: 10px 12px;
+	margin: 10px 12px;
+	font-style: italic;
+	width: 10px 12px;
+	color: red;
+}
